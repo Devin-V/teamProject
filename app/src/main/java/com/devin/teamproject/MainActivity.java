@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
     public static int PASSWORD = 1234;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, calenView.class);
                 startActivity(intent);
             } else {
+                Log.e("Login", "Pin Did not match");
                 mEditor.putString(getString(R.string.checkbox), "False");
                 mEditor.commit();
 
