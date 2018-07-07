@@ -22,6 +22,9 @@
         <activity android:name=".dayView">
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity android:name=".CreateRes">
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>
