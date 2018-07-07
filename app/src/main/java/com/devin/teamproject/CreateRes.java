@@ -1,0 +1,105 @@
+package com.devin.teamproject;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import static com.devin.teamproject.MainActivity.DATE_MESSAGE;
+
+public class CreateRes extends AppCompatActivity{
+
+    private DatabaseReference mDatabase;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.reserve_time);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        //gets date from previous screen
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(DATE_MESSAGE);
+
+        // Displays date at top of screen
+        TextView textView = findViewById(R.id.textView);
+        textView.setText(message);
+
+        // Dropdown menu for court number
+        Spinner court = findViewById(R.id.spinner);
+        String[] courts = new String[]{"1", "2", "3", "4", "5", "6"};
+        ArrayAdapter<String> adapterCourt = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, courts);
+        court.setAdapter(adapterCourt);
+
+        // Dropdown menu for start time
+        Spinner timeStart = findViewById(R.id.spinner2);
+        String[] startTimes = new String[]{"7am", "8am", "9am", "10am","11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm", "9pm"};
+        ArrayAdapter<String> adapterStartTime = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, startTimes);
+        timeStart.setAdapter(adapterStartTime);
+
+        // Dropdown menu for end time
+        Spinner timeEnd = findViewById(R.id.spinner3);
+        String[] endTimes = new String[]{"8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm", "9pm", "10pm"};
+        ArrayAdapter<String> adapterEndTime = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, endTimes);
+        timeEnd.setAdapter(adapterEndTime);
+    }
+
+    public void makeRes(View view){
+        // Removes the "Date:" from date string
+        Intent intent = getIntent();
+        String oldDate = intent.getStringExtra(DATE_MESSAGE);
+        String blankDate = oldDate.replaceAll("Date:", "");
+
+        // Converts date string to Date object
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            date = formatter.parse(blankDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        //Converts court# to an int
+        Spinner court = findViewById(R.id.spinner);
+        String courtNumber = court.getItemAtPosition(court.getSelectedItemPosition()).toString();
+        int courtNum = Integer.parseInt(courtNumber);
+
+        //Gets the name user input
+        EditText userName = findViewById(R.id.editText2);
+        String name = userName.getText().toString();
+
+        //Converts startHour to an int
+        Spinner timeStart = findViewById(R.id.spinner2);
+        String timeStartString = timeStart.getItemAtPosition(timeStart.getSelectedItemPosition()).toString();
+        String fixedString = timeStartString.replaceAll("am|pm", "");
+        int startHour = Integer.parseInt(fixedString);
+
+        //Converts endHour to an int
+        Spinner timeEnd = findViewById(R.id.spinner3);
+        String timeEndString = timeEnd.getItemAtPosition(timeEnd.getSelectedItemPosition()).toString();
+        String correctString = timeEndString.replaceAll("am|pm", "");
+        int endHour = Integer.parseInt(correctString);
+
+        // Creates the Schedule Object
+        Schedule entry = new Schedule(date, courtNum, name, startHour, endHour);
+
+        // Adds the object to the database
+        String id = mDatabase.push().getKey();
+        mDatabase.child(blankDate).child(id).setValue(entry);
+        Toast.makeText(getApplicationContext(), "added to database", Toast.LENGTH_SHORT).show();
+
+    }
+}
