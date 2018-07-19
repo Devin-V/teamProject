@@ -63,15 +63,6 @@ public class CreateRes extends AppCompatActivity{
         String oldDate = intent.getStringExtra(DATE_MESSAGE);
         String blankDate = oldDate.replaceAll("Date:", "");
 
-        // Converts date string to Date object
-        Date date = new Date();
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            date = formatter.parse(blankDate);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
         //Converts court# to an int
         Spinner court = findViewById(R.id.spinner);
         String courtNumber = court.getItemAtPosition(court.getSelectedItemPosition()).toString();
@@ -94,12 +85,15 @@ public class CreateRes extends AppCompatActivity{
         int endHour = Integer.parseInt(correctString);
 
         // Creates the Schedule Object
-        Schedule entry = new Schedule(date, courtNum, name, startHour, endHour);
+        Schedule entry = new Schedule(courtNum, name, startHour, endHour);
 
         // Adds the object to the database
         String id = mDatabase.push().getKey();
         mDatabase.child(blankDate).child(id).setValue(entry);
-        Toast.makeText(getApplicationContext(), "added to database", Toast.LENGTH_SHORT).show();
 
+        // Jumps back to dayView
+        Intent intent1 = new Intent(this, dayView.class);
+        intent1.putExtra(DATE_MESSAGE, oldDate);
+        startActivity(intent1);
     }
 }

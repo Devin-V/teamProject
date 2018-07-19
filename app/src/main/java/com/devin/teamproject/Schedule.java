@@ -5,14 +5,12 @@ import java.util.Date;
 public class Schedule {
     public int startHour;
     public int endHour;
-    public Date date;
     public String name;
     public int courtNum;
 
     Schedule(){};
 
-    Schedule(Date date, int courtNum, String name, int startHour, int endHour){
-        setDate(date);
+    Schedule(int courtNum, String name, int startHour, int endHour){
         setCourtNum(courtNum);
         setName(name);
         setStartHour(startHour);
@@ -25,10 +23,6 @@ public class Schedule {
 
     public int getEndHour() { return endHour; }
 
-    public Date getDate() {
-        return date;
-    }
-
     public String getName() {
         return name;
     }
@@ -39,10 +33,6 @@ public class Schedule {
 
     public void setCourtNum(int courtNum) {
         this.courtNum = courtNum;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public void setStartHour(int startHour) { this.startHour = startHour; }
