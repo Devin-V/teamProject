@@ -61,8 +61,8 @@ public class CreateRes extends AppCompatActivity{
         // Removes the "Date:" from date string
         Intent intent = getIntent();
         String oldDate = intent.getStringExtra(DATE_MESSAGE);
-        String middleDate = oldDate.replaceAll("Date", "");
-        String blankDate = middleDate.replaceAll("/", "");
+        String middleDate = oldDate.replaceAll("Date:", "").trim();
+        String blankDate = middleDate.replaceAll("/", "").trim();
 
         //Converts court# to an int
         Spinner court = findViewById(R.id.spinner);
