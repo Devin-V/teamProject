@@ -32,6 +32,7 @@ public class dayView extends AppCompatActivity{
     public String day = "";
     public String year = "";
     public String firebaseString = "";
+    ArrayList<Schedule> array  = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,7 @@ public class dayView extends AppCompatActivity{
             }
         });
 
+
         //Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
@@ -82,19 +84,20 @@ public class dayView extends AppCompatActivity{
         for(DataSnapshot ds : dataSnapshot.getChildren()){
             Schedule sched = new Schedule();
             Log.i("SCHEDULE", String.valueOf(ds.getValue()));
-            //sched.setName(ds.child(firebaseString).child("name").getValue(Schedule.class).getName()); //set the name
-//            sched.setCourtNum(ds.child(firebaseString).getValue(Schedule.class).getCourtNum()); //set the court num
-//            sched.setStartHour(ds.child(firebaseString).getValue(Schedule.class).getStartHour()); //set the start hour
-//            sched.setEndHour(ds.child(firebaseString).getValue(Schedule.class).getEndHour()); //set the end hour
+            sched.setName(ds.getValue(Schedule.class).getName()); //set the name
+            sched.setCourtNum(ds.getValue(Schedule.class).getCourtNum()); //set the court num
+            sched.setStartHour(ds.getValue(Schedule.class).getStartHour()); //set the start hour
+            sched.setEndHour(ds.getValue(Schedule.class).getEndHour()); //set the end hour
 
             //display all the information
-            //Log.d("Sched", "showData: name: " + sched.getName());
-//            Log.d("Sched", "showData: courtNum: " + sched.getCourtNum());
-//            Log.d("Sched", "showData: startHour: " + sched.getStartHour());
-//            Log.d("Sched", "showData: endHour: " + sched.getEndHour());
+            Log.d("Sched", "showData: name: " + sched.getName());
+            Log.d("Sched", "showData: courtNum: " + sched.getCourtNum());
+            Log.d("Sched", "showData: startHour: " + sched.getStartHour());
+            Log.d("Sched", "showData: endHour: " + sched.getEndHour());
 
-            ArrayList<Schedule> array  = new ArrayList<>();
+
             array.add(sched);
+
         }
     }
 
