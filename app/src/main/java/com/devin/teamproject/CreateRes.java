@@ -61,7 +61,8 @@ public class CreateRes extends AppCompatActivity{
         // Removes the "Date:" from date string
         Intent intent = getIntent();
         String oldDate = intent.getStringExtra(DATE_MESSAGE);
-        String blankDate = oldDate.replaceAll("Date:", "");
+        String middleDate = oldDate.replaceAll("Date", "");
+        String blankDate = middleDate.replaceAll("/", "");
 
         //Converts court# to an int
         Spinner court = findViewById(R.id.spinner);
@@ -89,7 +90,7 @@ public class CreateRes extends AppCompatActivity{
 
         // Adds the object to the database
         String id = mDatabase.push().getKey();
-        mDatabase.child(blankDate).child(id).setValue(entry);
+        mDatabase.child("schedule").child(blankDate).child(id).setValue(entry);
 
         // Jumps back to dayView
         Intent intent1 = new Intent(this, dayView.class);
