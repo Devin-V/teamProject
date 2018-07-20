@@ -12,6 +12,7 @@ import static com.devin.teamproject.MainActivity.DATE_MESSAGE;
 
 public class calenView extends AppCompatActivity{
     public String date ="";
+    boolean checking = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -23,11 +24,21 @@ public class calenView extends AppCompatActivity{
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
                 date = ("Date: " + (month + 1) + "/" + dayOfMonth + "/" + year);
+                checking = true;
                 Toast.makeText(getApplicationContext(), date, Toast.LENGTH_SHORT).show();
             }
         });
     }
-    public void viewDay(View view){
+    public void viewDay(View view) {
+        if(checking == true){
+            nextPage();
+        } else {
+            Toast.makeText(getApplicationContext(), "Please select a date", Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+
+    public void nextPage(){
         Intent intent = new Intent(this, dayView.class);
         intent.putExtra(DATE_MESSAGE, date);
         startActivity(intent);

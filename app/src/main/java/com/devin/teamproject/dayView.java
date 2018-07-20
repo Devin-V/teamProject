@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -75,8 +76,6 @@ public class dayView extends AppCompatActivity{
 
             }
         });
-
-
         //Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
@@ -95,34 +94,70 @@ public class dayView extends AppCompatActivity{
             Log.d("Sched", "showData: startHour: " + sched.getStartHour());
             Log.d("Sched", "showData: endHour: " + sched.getEndHour());
 
+            String textbox;
+            int resourceID;
+            TextView textView;
+            int[] middleTimes = new int[16];
+            int counter = 0;
 
+            for (int i = sched.getStartHour(); i <= sched.getEndHour(); i++){
+                middleTimes[counter] = i;
+                counter++;
+            }
+
+            switch(sched.getCourtNum()){
+                case 1:
+                    for(int i = 0; i < (sched.getEndHour() - sched.getStartHour() + 1); i++){
+                        textbox = "c1_" + middleTimes[i];
+                        resourceID = getResources().getIdentifier(textbox, "id", getPackageName());
+                        textView = findViewById(resourceID);
+                        textView.setText(sched.getName());
+                    }
+                    break;
+                case 2:
+                    for(int i = 0; i < (sched.getEndHour() - sched.getStartHour() + 1); i++){
+                        textbox = "c2_" + middleTimes[i];
+                        resourceID = getResources().getIdentifier(textbox, "id", getPackageName());
+                        textView = findViewById(resourceID);
+                        textView.setText(sched.getName());
+                    }
+                    break;
+                case 3:
+                    for(int i = 0; i < (sched.getEndHour() - sched.getStartHour() + 1); i++){
+                        textbox = "c3_" + middleTimes[i];
+                        resourceID = getResources().getIdentifier(textbox, "id", getPackageName());
+                        textView = findViewById(resourceID);
+                        textView.setText(sched.getName());
+                    }
+                    break;
+                case 4:
+                    for(int i = 0; i < (sched.getEndHour() - sched.getStartHour() + 1); i++){
+                        textbox = "c4_" + middleTimes[i];
+                        resourceID = getResources().getIdentifier(textbox, "id", getPackageName());
+                        textView = findViewById(resourceID);
+                        textView.setText(sched.getName());
+                    }
+                    break;
+                case 5:
+                    for(int i = 0; i < (sched.getEndHour() - sched.getStartHour() + 1); i++){
+                        textbox = "c5_" + middleTimes[i];
+                        resourceID = getResources().getIdentifier(textbox, "id", getPackageName());
+                        textView = findViewById(resourceID);
+                        textView.setText(sched.getName());
+                    }
+                    break;
+                case 6:
+                    for(int i = 0; i < (sched.getEndHour() - sched.getStartHour() + 1); i++){
+                        textbox = "c6_" + middleTimes[i];
+                        resourceID = getResources().getIdentifier(textbox, "id", getPackageName());
+                        textView = findViewById(resourceID);
+                        textView.setText(sched.getName());
+                    }
+                    break;
+            }
             array.add(sched);
-
         }
     }
-
-//    public void databaseStuff(String month, String day, String year){
-//        // Sets the path for the database reference
-//        final DatabaseReference myRef = database.getReference().child(month).child(day).child(year);
-//
-//        // Checks Database for Schedules in given date
-//        myRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                // Gets objects from database in a map
-//                Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
-//                Log.i("CONTENTS", String.valueOf(myRef));
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//                Log.w("Error", "failed to read value");
-//            }
-//        });
-
-        // fill schedules to table here
-    //}
-
 
     public void createRes(View view){
         Intent intent = new Intent(this, CreateRes.class);
