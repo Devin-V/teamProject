@@ -30,10 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mPreferences.edit();
-
         checkSharedPreferences();
-
-
     }
 
     public void checkPin(View view) {
@@ -79,6 +76,5 @@ public class MainActivity extends AppCompatActivity {
         } else {
             mCheckbox.setChecked(false);
         }
-
     }
 }

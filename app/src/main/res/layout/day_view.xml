@@ -70,6 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Time" />
 
         <TextView
@@ -77,6 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Court 1" />
 
         <TextView
@@ -84,6 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Court 2" />
 
         <TextView
@@ -91,6 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Court 3" />
 
         <TextView
@@ -98,6 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Court 4" />
 
         <TextView
@@ -105,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Court 5" />
 
         <TextView
@@ -112,6 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="Court 6" />
     </LinearLayout>
 
@@ -131,49 +138,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
+            android:gravity="right"
             android:text="7a  " />
 
         <TextView
             android:id="@+id/c1_7"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_light"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_7"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_7"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_7"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_7"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_7"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -193,51 +207,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
+            android:gravity="right"
             android:text="8a  " />
 
         <TextView
             android:id="@+id/c1_8"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_light"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_8"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#d9e533"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_8"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_light"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_8"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_8"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_8"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -257,51 +276,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="9a " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="9a  " />
 
         <TextView
             android:id="@+id/c1_9"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_9"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#c500cc"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_9"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_9"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_9"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_9"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -321,48 +345,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="10a" />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="10a " />
 
         <TextView
             android:id="@+id/c1_10"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_10"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_10"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_10"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_10"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_10"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -382,48 +414,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="11a" />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="11a " />
 
         <TextView
             android:id="@+id/c1_11"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_11"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_11"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_11"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_11"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_11"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -443,48 +483,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="12p" />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="12p " />
 
         <TextView
             android:id="@+id/c1_12"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_12"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_12"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_12"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_12"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_12"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -504,48 +552,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="1p  " />
 
         <TextView
             android:id="@+id/c1_13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -565,48 +621,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="2p  " />
 
         <TextView
             android:id="@+id/c1_14"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_14"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_14"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_14"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_14"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_14"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -626,48 +690,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="3p  " />
 
         <TextView
             android:id="@+id/c1_15"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_15"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_15"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_15"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_15"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_15"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -687,48 +759,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="4p  " />
 
         <TextView
             android:id="@+id/c1_16"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_16"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_16"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_16"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_16"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_16"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -748,49 +828,119 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="5p  " />
 
         <TextView
             android:id="@+id/c1_17"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c2_17"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c3_17"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c4_17"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
             android:id="@+id/c5_17"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
             android:id="@+id/c6_17"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <TextView
+            android:id="@+id/pm6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="10p " />
+
+        <TextView
+            android:id="@+id/c1_18"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#86c6e2ed" />
+
+        <TextView
+            android:id="@+id/c2_18"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#8ec0c0c0" />
+
+        <TextView
+            android:id="@+id/c3_18"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#86c6e2ed" />
+
+        <TextView
+            android:id="@+id/c4_18"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#8ec0c0c0" />
+
+        <TextView
+            android:id="@+id/c5_18"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#86c6e2ed" />
+
+        <TextView
+            android:id="@+id/c6_18"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#8ec0c0c0" />
     </LinearLayout>
 
     <LinearLayout
@@ -809,48 +959,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="7p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="7p  " />
 
         <TextView
-            android:id="@+id/c1_18"
-            android:layout_width="wrap_content"
+            android:id="@+id/c1_19"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c2_18"
-            android:layout_width="wrap_content"
+            android:id="@+id/c2_19"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c3_18"
-            android:layout_width="wrap_content"
+            android:id="@+id/c3_19"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c4_18"
-            android:layout_width="wrap_content"
+            android:id="@+id/c4_19"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c5_18"
-            android:layout_width="wrap_content"
+            android:id="@+id/c5_19"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c6_18"
-            android:layout_width="wrap_content"
+            android:id="@+id/c6_19"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -870,48 +1028,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="8p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="8p  " />
 
         <TextView
-            android:id="@+id/c1_19"
-            android:layout_width="wrap_content"
+            android:id="@+id/c1_20"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c2_19"
-            android:layout_width="wrap_content"
+            android:id="@+id/c2_20"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c3_19"
-            android:layout_width="wrap_content"
+            android:id="@+id/c3_20"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c4_19"
-            android:layout_width="wrap_content"
+            android:id="@+id/c4_20"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c5_19"
-            android:layout_width="wrap_content"
+            android:id="@+id/c5_20"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c6_19"
-            android:layout_width="wrap_content"
+            android:id="@+id/c6_20"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -931,48 +1097,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="9p " />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="9p  " />
 
         <TextView
-            android:id="@+id/c1_20"
-            android:layout_width="wrap_content"
+            android:id="@+id/c1_21"
+            android:layout_width="9dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c2_20"
-            android:layout_width="wrap_content"
+            android:id="@+id/c2_21"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c3_20"
-            android:layout_width="wrap_content"
+            android:id="@+id/c3_21"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c4_20"
-            android:layout_width="wrap_content"
+            android:id="@+id/c4_21"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c5_20"
-            android:layout_width="wrap_content"
+            android:id="@+id/c5_21"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c6_20"
-            android:layout_width="wrap_content"
+            android:id="@+id/c6_21"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 
@@ -991,48 +1165,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="10p" />
+            android:background="#8ec0c0c0"
+            android:gravity="right"
+            android:text="10p " />
 
         <TextView
-            android:id="@+id/c1_21"
-            android:layout_width="wrap_content"
+            android:id="@+id/c1_22"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c2_21"
-            android:layout_width="wrap_content"
+            android:id="@+id/c2_22"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c3_21"
-            android:layout_width="wrap_content"
+            android:id="@+id/c3_22"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c4_21"
-            android:layout_width="wrap_content"
+            android:id="@+id/c4_22"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c5_21"
-            android:layout_width="wrap_content"
+            android:id="@+id/c5_22"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#86c6e2ed"
             android:text="..." />
 
         <TextView
-            android:id="@+id/c6_21"
-            android:layout_width="wrap_content"
+            android:id="@+id/c6_22"
+            android:layout_width="9dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#8ec0c0c0"
             android:text="..." />
     </LinearLayout>
 

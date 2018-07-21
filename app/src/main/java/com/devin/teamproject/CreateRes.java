@@ -3,6 +3,7 @@ package com.devin.teamproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -59,6 +60,87 @@ public class CreateRes extends AppCompatActivity{
     }
 
     public void makeRes(View view){
+        Spinner timeStart = findViewById(R.id.spinner2);
+        String timeStartString = timeStart.getItemAtPosition(timeStart.getSelectedItemPosition()).toString();
+        switch (timeStartString){
+            case "1pm":
+                timeStartString = "13pm";
+                break;
+            case "2pm":
+                timeStartString = "14pm";
+                break;
+            case "3pm":
+                timeStartString = "15pm";
+                break;
+            case "4pm":
+                timeStartString = "16pm";
+                break;
+            case "5pm":
+                timeStartString = "17pm";
+                break;
+            case "6pm":
+                timeStartString = "18pm";
+                break;
+            case "7pm":
+                timeStartString = "19pm";
+                break;
+            case "8pm":
+                timeStartString = "20pm";
+                break;
+            case "9pm":
+                timeStartString = "21pm";
+                break;
+            case "10pm":
+                timeStartString = "22pm";
+                break;
+        }
+        String fixedString = timeStartString.replaceAll("am|pm", "");
+        int startHour = Integer.parseInt(fixedString);
+
+        Spinner timeEnd = findViewById(R.id.spinner3);
+        String timeEndString = timeEnd.getItemAtPosition(timeEnd.getSelectedItemPosition()).toString();
+        switch (timeEndString){
+            case "1pm":
+                timeEndString = "13pm";
+                break;
+            case "2pm":
+                timeEndString = "14pm";
+                break;
+            case "3pm":
+                timeEndString = "15pm";
+                break;
+            case "4pm":
+                timeEndString = "16pm";
+                break;
+            case "5pm":
+                timeEndString = "17pm";
+                break;
+            case "6pm":
+                timeEndString = "18pm";
+                break;
+            case "7pm":
+                timeEndString = "19pm";
+                break;
+            case "8pm":
+                timeEndString = "20pm";
+                break;
+            case "9pm":
+                timeEndString = "21pm";
+                break;
+            case "10pm":
+                timeEndString = "22pm";
+                break;
+        }
+        String correctString = timeEndString.replaceAll("am|pm", "");
+        int endHour = Integer.parseInt(correctString);
+
+        if(startHour > endHour){
+            Toast.makeText(this, "Start Time is After End Time", Toast.LENGTH_SHORT).show();
+        } else {
+            makeReservation();
+        }
+    }
+    public void makeReservation(){
         // Removes the "Date:" from date string
         Intent intent = getIntent();
         String oldDate = intent.getStringExtra(DATE_MESSAGE);
